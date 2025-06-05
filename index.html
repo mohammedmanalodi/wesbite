@@ -6,7 +6,7 @@
     <title>Mohammed Manalodi Abdullatif | AI & Data Science</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
+     <style>
         /* Custom Styles */
         :root {
             --primary: #6366f1;
@@ -303,9 +303,6 @@
     </style>
 </head>
 <body class="dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300">
-    <!-- Custom Cursor -->
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
     
     <!-- Neural Network Background -->
     <svg class="neural-network" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
@@ -320,15 +317,32 @@
     <!-- Navigation -->
     <nav class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-md shadow-lg">
         <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
+            <div class="flex items-center justify-between">
+                <!-- Left: Logo -->
                 <a href="#" class="text-2xl font-bold gradient-text">M.M.A</a>
-                <div class="hidden md:flex space-x-8">
+            
+                <!-- Center: Navigation links -->
+                <div class="hidden md:flex space-x-8 -ml-20">
                     <a href="#home" class="hover:text-indigo-400 transition-colors">Home</a>
                     <a href="#projects" class="hover:text-indigo-400 transition-colors">Projects</a>
                     <a href="#skills" class="hover:text-indigo-400 transition-colors">Skills</a>
                     <a href="#certifications" class="hover:text-indigo-400 transition-colors">Certifications</a>
                     <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
                     <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+                </div>
+                
+            
+                <!-- Right: Resume icon button -->
+                <div class="hidden md:flex items-center">
+    <a href="Mohammed_Manalodi_Resume.pdf" download 
+       class="text-white text-lg">
+        📝
+    </a>
+</div>
+
+                
+            
+                    
                 </div>
                 <div class="flex items-center space-x-4">
                     
@@ -369,8 +383,6 @@
     </section>
     
     
-    <!-- Certifications Section -->
-    
 
     <!-- Projects Section -->
     <section id="projects" class="section bg-slate-100 dark:bg-slate-800">
@@ -380,93 +392,116 @@
             <!-- Projects Grid -->
 <!-- Projects Grid -->
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-    <!-- License Plate Recognition -->
-   
-                <div class="project-card h-80" data-category="ai cv">
-                    <div class="project-card-inner relative w-full h-full">
-                        <div class="project-card-front neon-card rounded-xl p-6 flex flex-col">
-                            <div class="w-16 h-16 rounded-full bg-indigo-500 flex items-center justify-center text-white mb-4">
-                                <i class="fas fa-car text-2xl"></i>
-                            </div
-                            <h3 class="text-xl font-bold mb-2">License Plate Recognition</h3>
-                            <p class="text-sm mb-4">Real-time license plate detection and recognition using YOLO and OpenCV.</p>
-                            <div class="flex flex-wrap gap-2 mt-auto">
-                                <span class="px-2 py-1 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-800 dark:text-indigo-200 rounded-full text-xs">Python</span>
-                                <span class="px-2 py-1 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-800 dark:text-indigo-200 rounded-full text-xs">YOLO</span>
-                                <span class="px-2 py-1 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-800 dark:text-indigo-200 rounded-full text-xs">OpenCV</span>
-                            </div>
-                        </div>
-                        <div class="project-card-back neon-card rounded-xl p-6 flex flex-col justify-center items-center bg-gradient-to-br from-indigo-600 to-purple-600 text-white">
-                            <h3 class="text-xl font-bold mb-4">License Plate Recognition</h3>
-                            <p class="text-sm mb-4 text-center">Developed during internship, this system can detect and recognize license plates in real-time with high accuracy.</p>
-                            <div class="flex space-x-4">
-                                <a href="#" class="px-4 py-2 bg-white text-indigo-600 rounded-lg hover:bg-gray-100 transition-colors text-sm">
-                                    <i class="fas fa-link mr-1"></i> Demo
-                                </a>
-                                <a href="https://github.com/mohammedmanalodi" class="px-4 py-2 border border-white text-white rounded-lg hover:bg-white/10 transition-colors text-sm">
-                                    <i class="fab fa-github mr-1"></i> Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+
+   <!-- Project 1 --> 
+<div class="h-80 w-full [perspective:1000px] group">
+    <!-- Inner Card -->
+    <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+      
+      <!-- Front Side -->
+      <div class="absolute inset-0 rounded-xl p-6 flex flex-col items-start justify-start backface-hidden [backface-visibility:hidden]" style="background-color: #181F31;">
+        <div class="w-16 h-16 rounded-full bg-indigo-500 flex items-center justify-center text-white mb-4">
+          <i class="fas fa-car text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2">License Plate Recognition</h3>
+        <p class="text-sm mb-4">Real-time license plate detection and recognition using YOLO and OpenCV.</p>
+        <div class="flex flex-wrap gap-2 mt-auto">
+            <span class="px-2 py-1 bg-indigo-800 dark:bg-indigo-900 text-indigo-100 dark:text-indigo-200 rounded-full text-xs">Python</span>
+            <span class="px-2 py-1 bg-indigo-800 dark:bg-indigo-900 text-indigo-100 dark:text-indigo-200 rounded-full text-xs">YOLO</span>
+            <span class="px-2 py-1 bg-indigo-800 dark:bg-indigo-900 text-indigo-100 dark:text-indigo-200 rounded-full text-xs">OpenCV</span>
+            
+        </div>
+      </div>
+  
+      <!-- Back Side -->
+      <div class="absolute inset-0 rounded-xl p-6 flex flex-col justify-center items-center bg-gradient-to-br from-indigo-600 to-purple-600 text-white [transform:rotateY(180deg)] backface-hidden [backface-visibility:hidden]">
+        <h3 class="text-xl font-bold mb-4">License Plate Recognition</h3>
+        <p class="text-sm mb-4 text-center">Developed during internship, this system can detect and recognize license plates in real-time with high accuracy.</p>
+        <div class="flex space-x-4">
+          <a href="https://github.com/mohammedmanalodi/LicensePlateAnalyzer" class="px-4 py-2 border border-white text-white rounded-lg hover:bg-white/10 transition-colors text-sm">
+            <i class="fab fa-github mr-1"></i> Code
+          </a>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+  
+
+  
                 
-                <!-- Project 2 -->
-                <div class="project-card h-80" data-category="ai cv">
-                    <div class="project-card-inner relative w-full h-full">
-                        <div class="project-card-front neon-card rounded-xl p-6 flex flex-col">
+                                    <!-- Project 2 -->
+                    <div class="h-80 w-full [perspective:1000px] group">
+                        <!-- Inner Card -->
+                        <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                    
+                        <!-- Front Side -->
+                        <div class="absolute inset-0 rounded-xl p-6 flex flex-col items-start justify-start backface-hidden [backface-visibility:hidden]" style="background-color: #181F31;">
                             <div class="w-16 h-16 rounded-full bg-green-500 flex items-center justify-center text-white mb-4">
-                                <i class="fas fa-receipt text-2xl"></i>
+                            <i class="fas fa-receipt text-2xl"></i>
                             </div>
                             <h3 class="text-xl font-bold mb-2">AI-Powered OCR Receipt Structuring</h3>
                             <p class="text-sm mb-4">OCR system to extract and structure receipt data into JSON format.</p>
                             <div class="flex flex-wrap gap-2 mt-auto">
-                                <span class="px-2 py-1 bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 rounded-full text-xs">Python</span>
-                                <span class="px-2 py-1 bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 rounded-full text-xs">PaddleOCR</span>
-                                <span class="px-2 py-1 bg-green-100 dark:green-900/50 text-green-800 dark:text-green-200 rounded-full text-xs">LLaMA3</span>
+                            <span class="px-2 py-1 bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 rounded-full text-xs">Python</span>
+                            <span class="px-2 py-1 bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 rounded-full text-xs">PaddleOCR</span>
+                            <span class="px-2 py-1 bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 rounded-full text-xs">LLaMA3</span>
                             </div>
                         </div>
-                        <div class="project-card-back neon-card rounded-xl p-6 flex flex-col justify-center items-center bg-gradient-to-br from-green-600 to-teal-600 text-white">
+                    
+                        <!-- Back Side -->
+                        <div class="absolute inset-0 rounded-xl p-6 flex flex-col justify-center items-center bg-gradient-to-br from-green-600 to-teal-600 text-white [transform:rotateY(180deg)] backface-hidden [backface-visibility:hidden]">
                             <h3 class="text-xl font-bold mb-4">AI-Powered OCR Receipt Structuring</h3>
                             <p class="text-sm mb-4 text-center">Automatically extracts and structures receipt data using PaddleOCR and fine-tuned with LLaMA3 and Mistral.</p>
                             <div class="flex space-x-4">
-                                <a href="#" class="px-4 py-2 bg-white text-green-600 rounded-lg hover:bg-gray-100 transition-colors text-sm">
-                                    <i class="fas fa-link mr-1"></i> Demo
-                                </a>
-                                <a href="https://github.com/mohammedmanalodi" class="px-4 py-2 border border-white text-white rounded-lg hover:bg-white/10 transition-colors text-sm">
-                                    <i class="fab fa-github mr-1"></i> Code
-                                </a>
+                            </a>
+                            <a href="https://github.com/mohammedmanalodi/Invoice-Data-Extractor" class="px-4 py-2 border border-white text-white rounded-lg hover:bg-white/10 transition-colors text-sm">
+                                <i class="fab fa-github mr-1"></i> Code
+                            </a>
                             </div>
+                        </div>
+                    
                         </div>
                     </div>
-                </div>
-                <div class="project-card h-80" data-category="ai cv">
-                    <div class="project-card-inner relative w-full h-full">
-                        <div class="project-card-front neon-card rounded-xl p-6 flex flex-col">
-                            <div class="w-16 h-16 rounded-full bg-blue-500 flex items-center justify-center text-white mb-4">
-                                <i class="fas fa-comments text-2xl"></i>
-                            </div>
-                            <h3 class="text-xl font-bold mb-2">AI-Powered Admissions and Course Assistant Chatbot</h3>
-                            <p class="text-sm mb-4">Interactive chatbot offering instant answers to FAQs on admissions and courses.</p>
-                            <div class="flex flex-wrap gap-2 mt-auto">
-                                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 rounded-full text-xs">Python</span>
-                                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 rounded-full text-xs">LLaMA3</span>
-                                <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 rounded-full text-xs">Streamlit</span>
-                            </div>
-                        </div>
-                        <div class="project-card-back neon-card rounded-xl p-6 flex flex-col justify-center items-center bg-gradient-to-br from-blue-600 to-indigo-600 text-white">
-                            <h3 class="text-xl font-bold mb-4">AI-Powered Admissions and Course Assistant Chatbot</h3>
-                            <p class="text-sm mb-4 text-center">Designed and developed to answer frequently asked questions regarding admissions and courses, using Meta’s LLaMA3 for fine-tuned, accurate conversational performance.</p>
-                            <div class="flex space-x-4">
-                                <a href="#" class="px-4 py-2 bg-white text-blue-600 rounded-lg hover:bg-gray-100 transition-colors text-sm">
-                                    <i class="fas fa-link mr-1"></i> Demo
-                                </a>
-                                <a href="https://github.com/mohammedmanalodi" class="px-4 py-2 border border-white text-white rounded-lg hover:bg-white/10 transition-colors text-sm">
-                                    <i class="fab fa-github mr-1"></i> Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+  
+
+                     <!-- Project 3 -->
+             <!-- Project 3 -->
+<div class="h-80 w-full [perspective:1000px] group">
+    <!-- Inner Card -->
+    <div class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+  
+      <!-- Front Side -->
+      <div class="absolute inset-0 rounded-xl p-6 flex flex-col items-start justify-start backface-hidden [backface-visibility:hidden]" style="background-color: #181F31;">
+        <div class="w-16 h-16 rounded-full bg-blue-500 flex items-center justify-center text-white mb-4">
+          <i class="fas fa-comments text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2">AI-Powered Admissions and Course Assistant Chatbot</h3>
+        <p class="text-sm mb-4">Interactive chatbot offering instant answers to FAQs on admissions and courses.</p>
+        <div class="flex flex-wrap gap-2 mt-auto">
+          <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 rounded-full text-xs">Python</span>
+          <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 rounded-full text-xs">LLaMA3</span>
+          <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-800 dark:text-blue-200 rounded-full text-xs">Streamlit</span>
+        </div>
+      </div>
+  
+      <!-- Back Side -->
+      <div class="absolute inset-0 rounded-xl p-6 flex flex-col justify-center items-center bg-gradient-to-br from-blue-600 to-indigo-600 text-white [transform:rotateY(180deg)] backface-hidden [backface-visibility:hidden]">
+        <h3 class="text-xl font-bold mb-4">AI-Powered Admissions and Course Assistant Chatbot</h3>
+        <p class="text-sm mb-4 text-center">Designed and developed to answer frequently asked questions regarding admissions and courses, using Meta’s LLaMA3 for fine-tuned, accurate conversational performance.</p>
+        <div class="flex space-x-4">
+          
+          </a>
+          <a href="https://github.com/mohammedmanalodi/chatbot" class="px-4 py-2 border border-white text-white rounded-lg hover:bg-white/10 transition-colors text-sm">
+            <i class="fab fa-github mr-1"></i> Code
+          </a>
+        </div>
+      </div>
+  
+    </div>
+  
                 </div>
                 
                 
@@ -575,8 +610,10 @@
                             <span>Git</span>
                         </div>
                         <div class="p-4 rounded-lg bg-white dark:bg-slate-800 shadow-md hover:shadow-lg transition-shadow flex items-center">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" class="w-8 h-8 mr-3" />
-                            <span>Flask</span>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-8 h-8 mr-3" />
+                            <span>HTML</span>
+                          </div>
+                          
                         </div>
                     </div>
                 </div>
@@ -726,275 +763,220 @@
                     </div>
                 </div>
                 
-                <!-- Timeline -->
-                <div class="md:w-2/3">
-                    <div class="bg-white dark:bg-slate-700 rounded-xl shadow-lg p-6">
-                        <h3 class="text-xl font-bold mb-6 flex items-center">
-                            <i class="fas fa-history mr-3 text-indigo-500"></i> My Journey
-                        </h3>
-                        
-                        <div class="space-y-8">
-                            <!-- Timeline Item 1 -->
-                            <div class="relative pl-6">
-                                <div class="bg-indigo-50 dark:bg-slate-800 rounded-lg p-4">
-                                    <div class="flex justify-between items-start mb-1">
-                                        <h4 class="font-bold">India International School</h4>
-                                        <span class="text-xs bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-2 py-1 rounded-full">2019-2021</span>
-                                    </div>
-                                    <p class="text-sm text-gray-600 dark:text-gray-300">Completed high school education with focus on science and mathematics.</p>
-                                </div>
-                            </div>
-                            
-                            <!-- Timeline Item 2 -->
-                            <div class="relative pl-6">
-                                <div class="bg-indigo-50 dark:bg-slate-800 rounded-lg p-4">
-                                    <div class="flex justify-between items-start mb-1">
-                                        <h4 class="font-bold">MEA Engineering College</h4>
-                                        <span class="text-xs bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-2 py-1 rounded-full">2021-2025</span>
-                                    </div>
-                                    <p class="text-sm text-gray-600 dark:text-gray-300">Pursuing Bachelor's degree in Artificial Intelligence & Data Science.</p>
-                                    
-                                    <!-- AIDEN Coordinator Subsection -->
-                                    <div class="mt-3 ml-4 border-l-2 border-indigo-300 dark:border-indigo-700 pl-4">
-                                        <div class="flex justify-between items-center">
-                                            <span class="text-sm font-semibold text-indigo-600 dark:text-indigo-400">AIDEN Student Coordinator</span>
-                                            <span class="text-xs text-indigo-500 dark:text-indigo-400">2024-2025</span>
-                                        </div>
-                                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Association By Artificial Intelligence And Data Science</p>
-                                    </div>
-                                </div>
-                            </div>
-                    <!-- Interests & Hobbies -->
-                    <div class="bg-white dark:bg-slate-700 rounded-xl shadow-lg p-6 mt-8">
-                        <h3 class="text-xl font-bold mb-6 flex items-center">
-                            <i class="fas fa-star mr-3 text-indigo-500"></i> Interests & Hobbies
-                        </h3>
-                        
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <div class="bg-indigo-50 dark:bg-slate-800 rounded-lg p-4 text-center">
-                                <div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-full flex items-center justify-center text-indigo-500 mx-auto mb-2">
-                                    <i class="fas fa-book"></i>
-                                </div>
-                                <p class="font-medium">AI Research</p>
-                            </div>
-                            <div class="bg-indigo-50 dark:bg-slate-800 rounded-lg p-4 text-center">
-                                <div class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center text-green-500 mx-auto mb-2">
-                                    <i class="fas fa-robot"></i>
-                                </div>
-                                <p class="font-medium">Robotics</p>
-                            </div>
-                            <div class="bg-indigo-50 dark:bg-slate-800 rounded-lg p-4 text-center">
-                                <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center text-purple-500 mx-auto mb-2">
-                                    <i class="fas fa-atom"></i>
-                                </div>
-                                <p class="font-medium">Quantum Computing</p>
-                            </div>
-                            <div class="bg-indigo-50 dark:bg-slate-800 rounded-lg p-4 text-center">
-                                <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center text-blue-500 mx-auto mb-2">
-                                    <i class="fas fa-code"></i>
-                                </div>
-                                <p class="font-medium">Open Source</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+             <!-- Timeline container centered horizontally -->
+<div class="md:w-1/2 order-2 md:order-2 mt-12 md:mt-16 mx-auto">
+    <div class="bg-white dark:bg-slate-700 rounded-xl shadow-lg p-6">
+      <h3 class="text-xl font-bold mb-6 flex items-center">
+        <i class="fas fa-history mr-3 text-indigo-500"></i> My Journey
+      </h3>
+      
+      <div class="space-y-8">
+        <!-- Timeline Item 1 (College first) -->
+        <div class="relative pl-10">
+          <!-- Bullet circle -->
+          <span class="absolute left-2 top-5 w-4 h-4 bg-indigo-500 rounded-full border-2 border-white dark:border-slate-700"></span>
+          
+          <div class="bg-indigo-50 dark:bg-slate-800 rounded-lg p-4">
+            <div class="flex justify-between items-start mb-1">
+              <div>
+                <h4 class="font-bold">MEA Engineering College</h4>
+                <p class="text-xs italic text-indigo-600 dark:text-indigo-400 mt-0.5 flex items-center gap-1 leading-tight">
+                    <i class="fas fa-map-marker-alt text-indigo-500 text-[0.85rem]"></i> Kerala, India
+                  </p>
+                  
+             </div>
+              <span class="text-xs bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-2 py-1 rounded-full">2021-2025</span>
             </div>
-        </div>
-    </section>
-    
-    <!-- Blog Section -->
-    <section id="blog" class="section">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">Latest Writings</h2>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Pursuing Bachelor's degree in Artificial Intelligence & Data Science.</p>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Blog Post 1 -->
-                <div class="neon-card rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
-                    <div class="h-48 bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center">
-                        <i class="fas fa-brain text-6xl text-white opacity-30"></i>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2">
-                            <span>May 15, 2023</span>
-                            <span class="mx-2">•</span>
-                            <span>8 min read</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">The Future of Transformer Models</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">Exploring the next generation of attention mechanisms and their potential applications beyond NLP.</p>
-                        <a href="#" class="text-indigo-500 hover:text-indigo-700 dark:hover:text-indigo-400 font-medium flex items-center">
-                            Read More <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Blog Post 2 -->
-                <div class="neon-card rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
-                    <div class="h-48 bg-gradient-to-r from-green-500 to-teal-600 flex items-center justify-center">
-                        <i class="fas fa-chart-line text-6xl text-white opacity-30"></i>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2">
-                            <span>April 2, 2023</span>
-                            <span class="mx-2">•</span>
-                            <span>6 min read</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Ethical AI: Challenges and Solutions</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">Addressing bias, transparency, and accountability in machine learning systems.</p>
-                        <a href="#" class="text-indigo-500 hover:text-indigo-700 dark:hover:text-indigo-400 font-medium flex items-center">
-                            Read More <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Blog Post 3 -->
-                <div class="neon-card rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
-                    <div class="h-48 bg-gradient-to-r from-blue-500 to-cyan-600 flex items-center justify-center">
-                        <i class="fas fa-language text-6xl text-white opacity-30"></i>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2">
-                            <span>March 10, 2023</span>
-                            <span class="mx-2">•</span>
-                            <span>10 min read</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-2">Arabic NLP: Unique Challenges</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">Why Arabic presents special difficulties for natural language processing and how to overcome them.</p>
-                        <a href="#" class="text-indigo-500 hover:text-indigo-700 dark:hover:text-indigo-400 font-medium flex items-center">
-                            Read More <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
+            <!-- AIDEN Coordinator Subsection -->
+            <div class="mt-3 ml-4 border-l-2 border-indigo-300 dark:border-indigo-700 pl-4">
+              <div class="flex justify-between items-center">
+                <span class="text-sm font-semibold text-indigo-600 dark:text-indigo-400">AIDEN Student Coordinator</span>
+                <span class="text-xs text-indigo-500 dark:text-indigo-400">2024-2025</span>
+              </div>
+              <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Association By Artificial Intelligence And Data Science</p>
             </div>
-            
-            <div class="text-center mt-12">
-                <a href="#" class="px-6 py-3 border border-indigo-600 text-indigo-600 dark:text-indigo-400 rounded-lg hover:bg-indigo-600 hover:text-white transition-colors inline-flex items-center">
-                    <i class="fas fa-book-open mr-2"></i> View All Articles
-                </a>
-            </div>
+          </div>
         </div>
-    </section>
-    
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-slate-100 dark:bg-slate-800">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">Get In Touch</h2>
-            
-            <div class="flex flex-col md:flex-row gap-12">
-                <!-- Contact Form -->
-                <div class="md:w-1/2">
-                    <form class="bg-white dark:bg-slate-700 rounded-xl shadow-lg p-6">
-                        <div class="mb-4">
-                            <label for="name" class="block text-sm font-medium mb-1">Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white dark:bg-slate-800 transition-all">
-                        </div>
-                        <div class="mb-4">
-                            <label for="email" class="block text-sm font-medium mb-1">Email</label>
-                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white dark:bg-slate-800 transition-all">
-                        </div>
-                        <div class="mb-4">
-                            <label for="subject" class="block text-sm font-medium mb-1">Subject</label>
-                            <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white dark:bg-slate-800 transition-all">
-                        </div>
-                        <div class="mb-4">
-                            <label for="message" class="block text-sm font-medium mb-1">Message</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white dark:bg-slate-800 transition-all"></textarea>
-                        </div>
-                        <button type="submit" class="w-full py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors flex items-center justify-center">
-                            <i class="fas fa-paper-plane mr-2"></i> Send Message
-                        </button>
-                    </form>
-                </div>
-                
-                <!-- Contact Info -->
-                <div class="md:w-1/2">
-                    <div class="bg-white dark:bg-slate-700 rounded-xl shadow-lg p-6 h-full">
-                        <h3 class="text-xl font-bold mb-6 flex items-center">
-                            <i class="fas fa-envelope mr-3 text-indigo-500"></i> Contact Information
-                        </h3>
-                        
-                        <div class="space-y-6">
-                            <div class="flex items-start">
-                                <div class="w-10 h-10 rounded-full bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-500 mr-4 mt-1">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">Email</p>
-                                    <a href="mailto:mohammed@example.com" class="font-medium hover:text-indigo-500 transition-colors">mohammed@example.com</a>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/50 flex items-center justify-center text-green-500 mr-4 mt-1">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </div>
-                                <div>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">LinkedIn</p>
-                                    <a href="https://linkedin.com/in/mohammed" target="_blank" class="font-medium hover:text-indigo-500 transition-colors">linkedin.com/in/mohammed</a>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="w-10 h-10 rounded-full bg-purple-100 dark:bg-purple-900/50 flex items-center justify-center text-purple-500 mr-4 mt-1">
-                                    <i class="fab fa-github"></i>
-                                </div>
-                                <div>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">GitHub</p>
-                                    <a href="https://github.com/mohammed" target="_blank" class="font-medium hover:text-indigo-500 transition-colors">github.com/mohammed</a>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-500 mr-4 mt-1">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div>
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">Location</p>
-                                    <p class="font-medium">Riyadh, Saudi Arabia</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="mt-8">
-                            <h4 class="text-lg font-bold mb-4">Let's Connect</h4>
-                            <div class="flex space-x-4">
-                                <a href="#" class="w-10 h-10 rounded-full bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-500 hover:bg-indigo-500 hover:text-white transition-colors">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#" class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-500 hover:bg-blue-500 hover:text-white transition-colors">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                                <a href="#" class="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-900/50 flex items-center justify-center text-gray-500 hover:bg-gray-500 hover:text-white transition-colors">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="w-10 h-10 rounded-full bg-red-100 dark:bg-red-900/50 flex items-center justify-center text-red-500 hover:bg-red-500 hover:text-white transition-colors">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        
+        
+        <!-- Timeline Item 2 (School second) -->
+        <div class="relative pl-10">
+          <!-- Bullet circle -->
+          <span class="absolute left-2 top-5 w-4 h-4 bg-indigo-500 rounded-full border-2 border-white dark:border-slate-700"></span>
+          
+          <div class="bg-indigo-50 dark:bg-slate-800 rounded-lg p-4">
+            <div class="flex justify-between items-start mb-1">
+              <div>
+                <h4 class="font-bold">India International School</h4>
+                <p class="text-xs italic text-indigo-600 dark:text-indigo-400 mt-0.5 flex items-center gap-1 leading-tight">
+                    <i class="fas fa-map-marker-alt text-indigo-500 text-[0.85rem]"></i> Sharjah, UAE
+                  </p>             
+                 </div>
+              <span class="text-xs bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 px-2 py-1 rounded-full">2019-2021</span>
             </div>
+            <p class="text-sm text-gray-600 dark:text-gray-300">Completed high school education with focus on science and mathematics.</p>
+          </div>
         </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-8">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <a href="#" class="text-2xl font-bold gradient-text">M.M.A</a>
-                    <p class="text-sm mt-2">AI & Data Science Student at MEA Engineering College</p>
-                </div>
-                <div class="flex space-x-6">
-                    <a href="#" class="hover:text-white transition-colors">Home</a>
-                    <a href="#" class="hover:text-white transition-colors">Projects</a>
-                    <a href="#" class="hover:text-white transition-colors">About</a>
-                    <a href="#" class="hover:text-white transition-colors">Contact</a>
-                </div>
-            </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
 
+
+</div>
+</div>
+</section>    
+    
+    
+   <!-- Contact Section -->
+<section id="contact" class="section bg-slate-100 dark:bg-slate-800">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center gradient-text">Get In Touch</h2>
+  
+      <div class="md:flex md:space-x-8">
+        <!-- Contact Form on Left -->
+        <div class="md:w-1/2 order-1 md:order-1">
+          <form id="contact-form" action="https://formsubmit.co/ajax/mohammedmanalodi@gmail.com" method="POST"
+            class="bg-white dark:bg-slate-700 rounded-xl shadow-lg p-6">
+  
+            <!-- Disable CAPTCHA -->
+            <input type="hidden" name="_captcha" value="false">
+  
+            <div class="mb-4">
+              <label for="name" class="block text-sm font-medium mb-1">Name</label>
+              <input type="text" id="name" name="name" required
+                class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white dark:bg-slate-800 transition-all">
+            </div>
+  
+            <div class="mb-4">
+              <label for="email" class="block text-sm font-medium mb-1">Email</label>
+              <input type="email" id="email" name="email" required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                title="Please enter a valid email address (e.g., name@example.com)"
+                inputmode="email"
+                class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white dark:bg-slate-800 transition-all">
+            </div>
+  
+            <div class="mb-4">
+              <label for="subject" class="block text-sm font-medium mb-1">Subject</label>
+              <input type="text" id="subject" name="_subject"
+                class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white dark:bg-slate-800 transition-all">
+            </div>
+  
+            <div class="mb-4">
+              <label for="message" class="block text-sm font-medium mb-1">Message</label>
+              <textarea id="message" name="message" rows="4" required
+                class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white dark:bg-slate-800 transition-all"></textarea>
+            </div>
+  
+            <button type="submit"
+              class="w-full py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors flex items-center justify-center">
+              <i class="fas fa-paper-plane mr-2"></i> Send Message
+            </button>
+  
+            <!-- Thank You Message -->
+            <p id="thank-you-msg" class="hidden mt-4 text-green-600 font-medium">✅ Thank you! Your message has been sent.</p>
+          </form>
         </div>
-    </footer>
+  
+        <!-- Contact Info on Right -->
+        <div class="md:w-1/2 order-2 md:order-2 mt-8 md:mt-16">
+            <div class="bg-white dark:bg-slate-700 rounded-xl shadow-lg p-6 mt-auto">
+            <h3 class="text-xl font-bold mb-4 flex items-center">
+              <i class="fas fa-envelope mr-3 text-indigo-500"></i> Contact Information
+            </h3>
+  
+            <div class="space-y-4">
+              <!-- Email -->
+              <div class="flex items-center">
+                <div
+                  class="w-9 h-9 rounded-full bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-500 mr-3">
+                  <i class="fas fa-envelope text-sm"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">Email</p>
+                  <a href="mailto:mohammedmanalodi@gmail.com"
+                    class="font-medium hover:text-indigo-500 transition-colors">mohammedmanalodi@gmail.com</a>
+                </div>
+              </div>
+  
+              <!-- LinkedIn -->
+              <div class="flex items-center">
+                <div
+                  class="w-9 h-9 rounded-full bg-green-100 dark:bg-green-900/50 flex items-center justify-center text-green-500 mr-3">
+                  <i class="fab fa-linkedin-in text-sm"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">LinkedIn</p>
+                  <a href="https://linkedin.com/in/mohammedmanalodi" target="_blank"
+                    class="font-medium hover:text-indigo-500 transition-colors">linkedin.com/in/mohammedmanalodi</a>
+                </div>
+              </div>
+  
+              <!-- GitHub -->
+              <div class="flex items-center">
+                <div
+                  class="w-9 h-9 rounded-full bg-purple-100 dark:bg-purple-900/50 flex items-center justify-center text-purple-500 mr-3">
+                  <i class="fab fa-github text-sm"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">GitHub</p>
+                  <a href="https://github.com/mohammedmanalodi" target="_blank"
+                    class="font-medium hover:text-indigo-500 transition-colors">github.com/mohammedmanalodi</a>
+                </div>
+              </div>
+  
+              <!-- Phone -->
+              <div class="flex items-center">
+                <div
+                  class="w-9 h-9 rounded-full bg-yellow-100 dark:bg-yellow-900/50 flex items-center justify-center text-yellow-500 mr-3">
+                  <i class="fas fa-phone text-sm"></i>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-500 dark:text-gray-400">Phone</p>
+                  <a href="tel:+918075112930"
+                    class="font-medium hover:text-indigo-500 transition-colors">+91 8075112930</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- JavaScript to handle no-redirect submission -->
+    <script>
+      const form = document.getElementById('contact-form');
+      const thankYouMsg = document.getElementById('thank-you-msg');
+  
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+  
+        const formData = new FormData(form);
+  
+        fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        }).then(response => {
+          if (response.ok) {
+            form.reset();
+            thankYouMsg.classList.remove('hidden');
+          } else {
+            alert("Something went wrong. Please try again.");
+          }
+        });
+      });
+    </script>
+  </section>
+  
     
     <script>
         // Typewriter Effect
@@ -1046,7 +1028,7 @@
         // Resume Download
         document.getElementById('downloadResume').addEventListener('click', function() {
             const link = document.createElement('a');
-            link.href = 'MOHAMMED MANALODI ABDULLATIF 2 copy.pdf';
+            link.href = 'MOHAMMED MANALODI ABDULLATIF.pdf';
             link.download = 'Mohammed_Manalodi_Abdullatif_Resume.pdf';
             document.body.appendChild(link);
             link.click();
